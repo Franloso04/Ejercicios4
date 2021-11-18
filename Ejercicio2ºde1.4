@@ -1,0 +1,23 @@
+Algoritmo ejercicio2
+	Definir nom Como Caracter;
+	Definir i Como Entero;
+	Definir bandera Como Logico;
+	
+	bandera = falso;
+	nom="";
+	Escribir "Dime tu nombre ";
+	leer nom;
+	Para i=0 Hasta Longitud(nom) Con Paso  1 Hacer
+		Si bandera == Verdadero Entonces
+			
+			bandera = falso;
+			Escribir Sin Saltar Mayusculas(Subcadena(nom,i,i));
+			
+		SiNo
+			bandera = Verdadero;
+			Escribir Sin Saltar Minusculas(Subcadena(nom,i,i));
+			
+		FinSi
+		
+	Fin Para
+FinAlgoritmo
