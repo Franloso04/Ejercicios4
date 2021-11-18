@@ -1,0 +1,25 @@
+Algoritmo Ejercicio4
+	Definir nom, letra,aux Como Caracter;
+	Definir i,j, cont Como Entero;
+	
+	letra="aeiou";
+	
+	Escribir "Dime tu nombre";
+	leer nom;
+	Para i=0 Hasta Longitud(letra) Con Paso 1 Hacer
+		aux=SubCadena(letra,i,i);
+		
+		Para j=0 Hasta Longitud(nom) Con Paso 1 Hacer
+			
+			Si (aux==SubCadena(nom,j,j))   Entonces
+				Escribir Sin Saltar aux;
+				j=Longitud(nom);
+				
+			FinSi
+			
+		Fin Para
+		
+	Fin Para
+FinAlgoritmo
+
+	
